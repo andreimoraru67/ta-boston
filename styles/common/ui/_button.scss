@@ -10,7 +10,7 @@
   transition: color 0.2s linear, background-color 0.2s linear;
 
   &:hover {
-    border-color: transparent;
+    background-color: transparent;
     color: $brand-primary;
   }
 
