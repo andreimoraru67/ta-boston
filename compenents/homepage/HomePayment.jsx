@@ -9,27 +9,30 @@ export default function HomePayment() {
 
       <ul>
         <li>
-          <img src="/images/payment/amazon.jpg" alt="amazon"></img>
+          <img src="/images/payment/visa.jpg" alt="Visa"></img>
         </li>
 
         <li>
-          <img src="/images/payment/amazon.jpg" alt="amazon"></img>
+          <img src="/images/payment/mastercard.jpg" alt="Mastercard"></img>
         </li>
 
         <li>
-          <img src="/images/payment/amazon.jpg" alt="amazon"></img>
+          <img src="/images/payment/maestro.jpg" alt="Maestro"></img>
         </li>
 
         <li>
-          <img src="/images/payment/amazon.jpg" alt="amazon"></img>
+          <img src="/images/payment/cirrus.jpg" alt="Cirrus"></img>
         </li>
 
         <li>
-          <img src="/images/payment/amazon.jpg" alt="amazon"></img>
+          <img src="/images/payment/paypal.jpg" alt="Paypal"></img>
         </li>
 
         <li>
-          <img src="/images/payment/amazon.jpg" alt="amazon"></img>
+          <img
+            src="/images/payment/visa_electron.jpg"
+            alt="Visa Electron"
+          ></img>
         </li>
 
         <li>

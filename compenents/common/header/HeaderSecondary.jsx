@@ -16,13 +16,13 @@ export default function HeaderSecondary() {
               <i className="fa-solid fa-bars"></i>
             </Link>
           </li>
-        </ul>
 
-        <li>
-          <Link href="/" title="Search">
-            <i className="fa-solid fa-search"></i>
-          </Link>
-        </li>
+          <li>
+            <Link href="/" title="Search">
+              <i className="fa-solid fa-search"></i>
+            </Link>
+          </li>
+        </ul>
       </div>
 
       <div className="header-support d-none d-lg-block">

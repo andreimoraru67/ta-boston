@@ -1,35 +1,32 @@
-// hacks
-// mai multe layouturi
-
-// .home-catalog-preview:first-child {
-//   .product-tiles {
-//     display: flex;
-//     font-display: column;
-//     gap: 70px;
-
-//     @include media-breakpoint-up(lg) {
-//       display: block;
-//     }
-//   }
-// }
-
 .home-catalog-preview {
+  @include media-breakpoint-up(lg) {
+    h1 {
+      span:first-child {
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      span:nth-child(2) {
+        text-transform: uppercase;
+      }
+    }
+  }
   .product-tiles {
     display: flex;
     flex-direction: column;
     gap: 70px;
   }
 
-  // V1 layout
+  // v1 of layout
   &:first-child {
     .product-tiles {
       @include media-breakpoint-up(lg) {
         display: block;
 
         & > li {
-          width: 27.386541%;
+          width: 27.386541%; // 350 / 1278
           float: left;
-          margin-left: 8.8419405%;
+          margin-left: 8.8419405%; // 113 / 1278
 
           &:first-child {
             margin-left: 0;
@@ -39,8 +36,7 @@
     }
   }
 
-  // v2
-
+  // v2 of layout - flex
   &:nth-child(2) {
     .product-tiles {
       @include media-breakpoint-up(lg) {
@@ -55,13 +51,12 @@
     }
   }
 
-  // v3
-
+  // v3 of layout - grid
   &:nth-child(3) {
     .product-tiles {
       @include media-breakpoint-up(lg) {
-        grid-template-columns: repeat(3, 1fr);
         display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 8.8419405%;
       }
     }

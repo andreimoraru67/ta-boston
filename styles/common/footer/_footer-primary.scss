@@ -48,9 +48,55 @@
 
   .footer-contact {
     grid-area: contact;
+
+    h1 {
+      font-size: 16px;
+
+      span {
+        font-weight: 300;
+      }
+    }
+
+    p {
+      text-transform: none;
+    }
+
+    a {
+      display: block;
+
+      &:last-child {
+        color: $brand-primary;
+      }
+    }
   }
 
   .footer-support {
     grid-area: support;
+    color: $brand-primary;
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    ul {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+
+      i {
+        font-size: 40px;
+      }
+
+      a > span {
+        display: block;
+        color: $gray-tertiary;
+        margin-top: 10px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        justify-content: start;
+      }
+    }
   }
 }
